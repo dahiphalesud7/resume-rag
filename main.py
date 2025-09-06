@@ -2,6 +2,9 @@ import streamlit as st
 import os
 import tempfile
 import fitz
+import nltk
+nltk.download('punkt_tab')
+
 
 from app.loader.pdf_loader import load_all_resumes, load_uploaded_resumes
 from app.processor.cleaner import clean_text
